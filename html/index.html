@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordBeater</title>
+    <style>
+        #try-again{
+            display: none;
+        }
+    </style>
+</head>
+<body class="vh-100  bg-dark text-white text-center">
+    <header class="head">
+        <div class="container-fluid">
+            <div class="row bg-secondary">
+                <div class="col-12">
+                    <h1>WordBeater</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-3">
+                    <p>Type the word within 5 seconds</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h2 id="word"></h2>
+                    <form action="" id="form" class="w-50 mx-auto my-3">
+                        <div class="form-group">
+                            <input type="text" id="input" class="form-control" placeholder="Start typing">
+                        </div>
+                    </form>
+                    <p id="message"></p>
+                    <div>
+                        <button type="button" class="btn btn-primary rounded-pill" id="start">START</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary rounded-pill mt-2 mx-auto" id="try-again">TRY AGAIN</button>
+                    </div>
+                    <div class="w-50 my-5 mx-auto d-flex justify-content-between">
+                        <div class="time-box">
+                            <span id="time">TimeLeft : </span>
+                            <span id="time-value">5</span>
+                        </div>
+                        <div class="score-box">
+                            <span id="score">score : </span>
+                            <span id="score-value">0</span>
+                        </div>
+                    </div>
+                    <div class="card card-body bg-secondary w-50 mx-auto mt-4">
+                        <h5>Instruction</h5>
+                        <p>Type each word in the given amount of time to score. To play again, just type the current word. Your score will reset.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
